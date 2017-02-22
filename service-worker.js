@@ -20,7 +20,7 @@ self.addEventListener('install', function (event) {
 });
 
 self.addEventListener('activate', function (event) {
-  event.waitUntill(
+  event.waitUntil(
     caches
       .keys()
       .then(function (keyList) {
